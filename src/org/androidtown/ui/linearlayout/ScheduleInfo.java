@@ -3,7 +3,8 @@ package org.androidtown.ui.linearlayout;
 import android.util.Log;
 
 public class ScheduleInfo {
-	public static int table_lock[];
+	private static int table_lock[];
+	public boolean setlock_available;
 	
 	ScheduleInfo(){
 		table_lock = new int[70];
@@ -16,6 +17,12 @@ public class ScheduleInfo {
 	}
 	public int getTableLock(int index){
 		return table_lock[index];
+	}
+	public void setlock_unavailable(){
+		setlock_available = false;
+	}
+	public void setlock_available(){
+		setlock_available = true;
 	}
 
 }

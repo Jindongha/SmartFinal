@@ -71,15 +71,16 @@ public class ScheduleAdapter extends BaseAdapter {
 				public void onClick(View v_2) {
 					
 					//Log.i("gridview", "initial lock = "+scheduleinfo.getTableLock(position));
+					if (scheduleinfo.setlock_available == true){
 					
-					
-					if (scheduleinfo.getTableLock(position) == 1){
-						v.setImageResource(R.drawable.time_unlock);
-						scheduleinfo.setTableLock(position, 0);
-					}else if(scheduleinfo.getTableLock(position) == 0){
-						
-						v.setImageResource(R.drawable.time_lock);
-						scheduleinfo.setTableLock(position, 1);
+						if (scheduleinfo.getTableLock(position) == 1){
+							v.setImageResource(R.drawable.time_unlock);
+							scheduleinfo.setTableLock(position, 0);
+						}else if(scheduleinfo.getTableLock(position) == 0){
+							
+							v.setImageResource(R.drawable.time_lock);
+							scheduleinfo.setTableLock(position, 1);
+						}
 					}
 					
 					//Log.i("gridview", "final lock = "+scheduleinfo.getTableLock(position));
@@ -91,8 +92,6 @@ public class ScheduleAdapter extends BaseAdapter {
 
 		}
 		v.setScaleType(ImageView.ScaleType.CENTER_CROP);
-		
-		Log.i("gridview", "position = " + position + " final lock = "+scheduleinfo.getTableLock(position));
 		return v;
 	}
 

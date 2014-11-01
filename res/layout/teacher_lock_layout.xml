@@ -11,28 +11,28 @@
         android:gravity="center" >
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/lockset_button"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="10dp"
             android:src="@drawable/lock_set_timetable" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/timetableset_button"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="10dp"
             android:src="@drawable/lock_set_locktime" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/locknow_button"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="10dp"
             android:src="@drawable/lock_locknow" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/unlocknow_button"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="right|center_vertical"
