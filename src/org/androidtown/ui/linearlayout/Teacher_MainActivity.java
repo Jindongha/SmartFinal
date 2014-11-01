@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.ImageView;
 
 
@@ -15,6 +14,7 @@ public class Teacher_MainActivity extends Activity implements OnClickListener {
 	ImageView student_info_button;
 	ImageView QNA_button;
 	ImageView account_button;
+	@Override
 	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         

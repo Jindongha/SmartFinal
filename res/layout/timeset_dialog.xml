@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:text="1교시" />
+
+        <TextView
+            android:id="@+id/one_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작" />
+
+        <TextView
+            android:id="@+id/one_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="08:00" />
+
+        <TextView
+            android:id="@+id/one_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="끝" />
+
+        <TextView
+            android:id="@+id/one_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="08:50" />
+
+        <ImageView
+            android:id="@+id/one_set_button"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/lock_set_locktime" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:text="2교시" />
+
+        <TextView
+            android:id="@+id/one_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작" />
+
+        <TextView
+            android:id="@+id/two_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="09:00" />
+
+        <TextView
+            android:id="@+id/one_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="끝" />
+
+        <TextView
+            android:id="@+id/two_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="09:50" />
+
+        <ImageView
+            android:id="@+id/two_set_button"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/lock_set_locktime" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:text="3교시" />
+
+        <TextView
+            android:id="@+id/three_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작" />
+
+        <TextView
+            android:id="@+id/three_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="10:00" />
+
+        <TextView
+            android:id="@+id/three_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="끝" />
+
+        <TextView
+            android:id="@+id/three_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="10:50" />
+
+        <ImageView
+            android:id="@+id/three_set_button"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/lock_set_locktime" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:text="4교시" />
+
+        <TextView
+            android:id="@+id/four_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작" />
+
+        <TextView
+            android:id="@+id/four_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="11:00" />
+
+        <TextView
+            android:id="@+id/four_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="끝" />
+
+        <TextView
+            android:id="@+id/four_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="11:50" />
+
+        <ImageView
+            android:id="@+id/four_set_button"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/lock_set_locktime" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:text="5교시" />
+
+        <TextView
+            android:id="@+id/five_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작" />
+
+        <TextView
+            android:id="@+id/five_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="13:00" />
+
+        <TextView
+            android:id="@+id/five_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="끝" />
+
+        <TextView
+            android:id="@+id/five_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="13:50" />
+
+        <ImageView
+            android:id="@+id/five_set_button"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/lock_set_locktime" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:text="6교시" />
+
+        <TextView
+            android:id="@+id/six_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작" />
+
+        <TextView
+            android:id="@+id/six_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="14:00" />
+
+        <TextView
+            android:id="@+id/six_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="끝" />
+
+        <TextView
+            android:id="@+id/six_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="14:50" />
+
+        <ImageView
+            android:id="@+id/six_set_button"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/lock_set_locktime" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:text="7교시" />
+
+        <TextView
+            android:id="@+id/seven_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작" />
+
+        <TextView
+            android:id="@+id/seven_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="15:00" />
+
+        <TextView
+            android:id="@+id/seven_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="끝" />
+
+        <TextView
+            android:id="@+id/seven_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="15:50" />
+
+        <ImageView
+            android:id="@+id/seven_set_button"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/lock_set_locktime" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:text="8교시" />
+
+        <TextView
+            android:id="@+id/eight_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작" />
+
+        <TextView
+            android:id="@+id/eight_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="16:00" />
+
+        <TextView
+            android:id="@+id/eight_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="끝" />
+
+        <TextView
+            android:id="@+id/eight_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="16:50" />
+
+        <ImageView
+            android:id="@+id/eight_set_button"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/lock_set_locktime" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:text="9교시" />
+
+        <TextView
+            android:id="@+id/nine_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작" />
+
+        <TextView
+            android:id="@+id/nine_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="17:00" />
+
+        <TextView
+            android:id="@+id/nine_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="끝" />
+
+        <TextView
+            android:id="@+id/nine_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="17:50" />
+
+        <ImageView
+            android:id="@+id/nine_set_button"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/lock_set_locktime" />
+
+    </LinearLayout>
+
+</LinearLayout>
