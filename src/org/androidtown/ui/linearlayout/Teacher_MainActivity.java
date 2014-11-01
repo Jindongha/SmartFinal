@@ -20,6 +20,7 @@ public class Teacher_MainActivity extends Activity implements OnClickListener {
         
         setContentView(R.layout.teacher_main_layout);
         
+        
         lock_button = (ImageView)findViewById(R.id.lock_button);
         student_info_button = (ImageView)findViewById(R.id.student_button);
         QNA_button = (ImageView)findViewById(R.id.qna_button);
