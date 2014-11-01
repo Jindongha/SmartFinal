@@ -6,23 +6,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 
 
 
 public class Teacher_MainActivity extends Activity implements OnClickListener {
-	Button lock_button;
-	Button student_info_button;
-	Button QNA_button;
-	Button account_button;
+	ImageView lock_button;
+	ImageView student_info_button;
+	ImageView QNA_button;
+	ImageView account_button;
 	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
         setContentView(R.layout.teacher_main_layout);
         
-        lock_button = (Button)findViewById(R.id.lock_button);
-        student_info_button = (Button)findViewById(R.id.student_button);
-        QNA_button = (Button)findViewById(R.id.qna_button);
-        account_button = (Button)findViewById(R.id.account_button);
+        lock_button = (ImageView)findViewById(R.id.lock_button);
+        student_info_button = (ImageView)findViewById(R.id.student_button);
+        QNA_button = (ImageView)findViewById(R.id.qna_button);
+        account_button = (ImageView)findViewById(R.id.account_button);
         
         lock_button.setOnClickListener(this);
         student_info_button.setOnClickListener(this);

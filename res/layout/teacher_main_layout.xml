@@ -30,23 +30,23 @@
             android:gravity="center"
             android:padding="30dp" >
 
-            <Button
+            <ImageView
                 android:id="@+id/lock_button"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
-                android:text="잠금" />
+                android:src="@drawable/main_lock" />
 
-            <Button
+            <ImageView
                 android:id="@+id/student_button"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
-                android:text="학생정보" />
+                android:src="@drawable/mian_student_info" />
 
-            <Button
+            <ImageView
                 android:id="@+id/qna_button"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
-                android:text="Q&amp;A" />
+                android:src="@drawable/main_qna" />
 
         </LinearLayout>
 
@@ -55,11 +55,11 @@
             android:layout_height="wrap_content"
             android:gravity="center" >
 
-            <Button
+            <ImageView
                 android:id="@+id/account_button"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
-                android:text="계정" />
+                android:src="@drawable/main_account" />
 
             <Button
                 android:id="@+id/button5"
