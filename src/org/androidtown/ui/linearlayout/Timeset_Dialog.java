@@ -6,15 +6,15 @@ import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.widget.ImageView;
 
 
 public class Timeset_Dialog extends DialogFragment {
-	ImageView a;
+	Teacher_Lock_Activity teacher_lock;
+
 	public Dialog onCreateDialog(Bundle savedInstanceState){
 		AlertDialog.Builder mBuilder = new AlertDialog.Builder(getActivity());
 		LayoutInflater mLayoutInflater = getActivity().getLayoutInflater();
-		mBuilder.setView(mLayoutInflater.inflate(R.layout.timeset_dialog,null)).setPositiveButton("설정", new DialogInterface.OnClickListener(){
+		mBuilder.setView(mLayoutInflater.inflate(R.layout.classtime_dialog,null)).setPositiveButton("설정", new DialogInterface.OnClickListener(){
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub
@@ -28,7 +28,6 @@ public class Timeset_Dialog extends DialogFragment {
 			}
 		});
 		mBuilder.setTitle("시간 설정");
-		
 		
 			
 		

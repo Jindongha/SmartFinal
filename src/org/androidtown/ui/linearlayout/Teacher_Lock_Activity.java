@@ -1,18 +1,15 @@
 package org.androidtown.ui.linearlayout;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.Toast;
 
-public class Teacher_Lock_Activity extends Activity {
+public class Teacher_Lock_Activity extends Activity{
 	
 	//시간표 객체 생성
 	GridView GridSchedule;
@@ -27,15 +24,8 @@ public class Teacher_Lock_Activity extends Activity {
 	ImageView unlocknow_button;
 	
 	
-	ImageView set1time_button;
-	ImageView set2time_button;
-	ImageView set3time_button;
-	ImageView set4time_button;
-	ImageView set5time_button;
-	ImageView set6time_button;
-	ImageView set7time_button;
-	ImageView set8time_button;
-	ImageView set9time_button;
+
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,16 +36,7 @@ public class Teacher_Lock_Activity extends Activity {
         locknow_button = (ImageView)findViewById(R.id.locknow_button);
         unlocknow_button = (ImageView)findViewById(R.id.unlocknow_button);
         
-        //다이얼로그 이미지
-        set1time_button = (ImageView)findViewById(R.id.one_set_button);
-        set2time_button = (ImageView)findViewById(R.id.two_set_button);
-        set3time_button = (ImageView)findViewById(R.id.three_set_button);
-        set4time_button = (ImageView)findViewById(R.id.four_set_button);
-        set5time_button = (ImageView)findViewById(R.id.five_set_button);
-        set6time_button = (ImageView)findViewById(R.id.six_set_button);
-        set7time_button = (ImageView)findViewById(R.id.seven_set_button);
-        set8time_button = (ImageView)findViewById(R.id.eight_set_button);
-        set9time_button = (ImageView)findViewById(R.id.nine_set_button);
+        
         
         
         
@@ -72,35 +53,37 @@ public class Teacher_Lock_Activity extends Activity {
 			@Override
 			public void onClick(View v) {
 				
-				Log.i("gridview", "lockset = "+adapter.scheduleinfo.setlock_available);
 				if (adapter.scheduleinfo.setlock_available == true){
 					timetableset_button.setVisibility(View.VISIBLE);
 					locknow_button.setVisibility(View.VISIBLE);
 					unlocknow_button.setVisibility(View.VISIBLE);
 					adapter.scheduleinfo.setlock_unavailable();
-					Log.i("gridview", "lockset changed = "+adapter.scheduleinfo.setlock_available);
 				}else
 				{
 					timetableset_button.setVisibility(View.INVISIBLE);
 					locknow_button.setVisibility(View.INVISIBLE);
 					unlocknow_button.setVisibility(View.INVISIBLE);
 					adapter.scheduleinfo.setlock_available();
-					Log.i("gridview", "lockset changed = "+adapter.scheduleinfo.setlock_available);
 				}
 			}
         	
         });
+        
+        
+        //시간설정 다이얼로그 띄우기
         timetableset_button.setOnClickListener(new OnClickListener(){
-
+        	Intent intent;
 			@Override
 			public void onClick(View v) {
+				intent = new Intent(getBaseContext(),Timeset_Activity.class);
+				startActivity(intent);
 
-				timeset = new Timeset_Dialog();
-				timeset.show(getFragmentManager(),"MYTAG");    // 알림창 띄우기
-				
 			}
         	
         });
+        
+        
+        
 	}
 
 }
