@@ -45,7 +45,7 @@ public class ScheduleAdapter extends BaseAdapter {
 		// TODO Auto-generated method stub
 		final ImageView v = new ImageView(mContext);
 		
-		
+		//현
 		if (oldView == null) {
 			// view size(100 / 60)
 			v.setLayoutParams(new GridView.LayoutParams(100, 60));
