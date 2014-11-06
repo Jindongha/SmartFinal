@@ -13,7 +13,7 @@ public class ScheduleAdapter extends BaseAdapter {
 
 	Context mContext;
 	int count = 70;	
-	//한글깨짐 테스트
+	//한글깨짐 테스트222
 	String[] mWeekTitleIds = { "시간","월","화","수","목","금","토" };
 	private Integer[] dayIDs = {R.drawable.lock_time,R.drawable.lock_mon,R.drawable.lock_tou,R.drawable.lock_thu,R.drawable.lock_thur,R.drawable.lock_fri,R.drawable.lock_sat};
 	private Integer[] timeIDs = {R.drawable.time_1,R.drawable.time_2,R.drawable.time_3,R.drawable.time_4,R.drawable.time_5,R.drawable.time_6,R.drawable.time_7,R.drawable.time_8,R.drawable.time_9};
