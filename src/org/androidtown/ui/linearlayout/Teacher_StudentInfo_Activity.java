@@ -38,12 +38,12 @@ public class Teacher_StudentInfo_Activity extends Activity {
 
 
 		Resources res = getResources();
-		adapter.addItem(new IconTextItem(res.getDrawable(R.drawable.time_lock), "ì§„ë™í•˜", "010-2971-7993", "ì ê¸ˆ"));
-		adapter.addItem(new IconTextItem(res.getDrawable(R.drawable.time_lock), "ì¡°ì¬í˜„", "010-5009-2627", "ì ê¸ˆ"));
-		adapter.addItem(new IconTextItem(res.getDrawable(R.drawable.time_lock), "í˜„ì •ë¯¼", "010-4826-2735", "ì ê¸ˆ"));
-		adapter.addItem(new IconTextItem(res.getDrawable(R.drawable.time_unlock), "ë‚¨ì¢…ìš°", "010-2293-2984", "í•´ì œ"));
-		adapter.addItem(new IconTextItem(res.getDrawable(R.drawable.time_lock), "ìµœí˜", "010-1818-1818", "ì ê¸ˆ"));
-		adapter.addItem(new IconTextItem(res.getDrawable(R.drawable.time_lock), "ì´ìˆ˜ì§„", "010-2671-8711", "ì ê¸ˆ"));
+		adapter.addItem(new IconTextItem(res.getDrawable(R.drawable.time_lock), "Áøµ¿ÇÏ", "010-2971-7993", "Àá±İ"));
+		adapter.addItem(new IconTextItem(res.getDrawable(R.drawable.time_lock), "ÂÉÀç", "010-5009-2627", "Àá±İ"));
+		adapter.addItem(new IconTextItem(res.getDrawable(R.drawable.time_lock), "ÇöÁ¤¹Î", "010-4826-2735", "Àá±İ"));
+		adapter.addItem(new IconTextItem(res.getDrawable(R.drawable.time_unlock), "³²Á¾¿ì", "010-2293-2984", "ÇØÁ¦"));
+		adapter.addItem(new IconTextItem(res.getDrawable(R.drawable.time_lock), "ÃÖÇõ", "010-1818-1818", "Àá±İ"));
+		adapter.addItem(new IconTextItem(res.getDrawable(R.drawable.time_lock), "ÀÌ¼öÁø", "010-2671-8711", "Àá±İ"));
 		
 
 

@@ -11,11 +11,11 @@ import android.widget.ImageView;
 
 public class Teacher_Lock_Activity extends Activity{
 	
-	//시간표 객체 생성
+	//�쒓컙��媛앹껜 �앹꽦
 	GridView GridSchedule;
 	ScheduleAdapter adapter;
 	
-	//시간표 설정다이얼로그 선언
+	//�쒓컙���ㅼ젙�ㅼ씠�쇰줈洹��좎뼵
 	Timeset_Dialog timeset;
 	
 	ImageView lockset_button;
@@ -40,7 +40,7 @@ public class Teacher_Lock_Activity extends Activity{
         
         
         
-        //gridlayout 설정
+        //gridlayout �ㅼ젙
         GridSchedule = (GridView)findViewById(R.id.schedule);
         adapter = new ScheduleAdapter(this);
         
@@ -70,7 +70,6 @@ public class Teacher_Lock_Activity extends Activity{
         });
         
         
-        //시간설정 다이얼로그 띄우기
         timetableset_button.setOnClickListener(new OnClickListener(){
         	Intent intent;
 			@Override
